@@ -1,9 +1,11 @@
 # Agenda Eletrônica Web - Arquitetura MVC
 
 ## Visão Geral
+
 Agenda Eletrônica é uma API REST para gerenciamento de eventos em um calendário, desenvolvida com Node.js, Express e MongoDB, seguindo rigorosamente o padrão arquitetural MVC (Model-View-Controller).
 
 ## Características
+
 - Arquitetura MVC com separação clara de responsabilidades
 - API REST completa para gerenciamento de eventos
 - Sistema de autenticação e controle de acesso
@@ -12,50 +14,55 @@ Agenda Eletrônica é uma API REST para gerenciamento de eventos em um calendár
 - Testes automatizados abrangentes
 
 ## Requisitos
+
 - Node.js 14+
 - MongoDB 4+
 
 ## Bibliotecas Utilizadas
 
 ### Dependências Principais
+
 ```json
 {
-  "bcryptjs": "^2.4.3",      // Criptografia de senhas
-  "connect-mongo": "^4.6.0",  // Armazenamento de sessões no MongoDB
-  "express": "^4.18.2",      // Framework web para API REST
+  "connect-mongo": "^4.6.0", // Armazenamento de sessões no MongoDB
+  "express": "^4.18.2", // Framework web para API REST
   "express-session": "^1.17.3", // Gerenciamento de sessões
-  "moment": "^2.29.4",       // Manipulação de datas
-  "mongodb": "^4.13.0"       // Driver do MongoDB
+  "moment": "^2.29.4", // Manipulação de datas
+  "mongodb": "^4.13.0" // Driver do MongoDB
 }
 ```
 
 ### Dependências de Desenvolvimento
+
 ```json
 {
-  "axios": "^1.3.4",         // Cliente HTTP para testes e simulações
-  "jest": "^29.5.0",         // Framework de testes
-  "nodemon": "^2.0.22",      // Reinicialização automática do servidor
-  "supertest": "^6.3.3"      // Testes de integração para APIs HTTP
+  "axios": "^1.3.4", // Cliente HTTP para testes e simulações
+  "jest": "^29.5.0", // Framework de testes
+  "nodemon": "^2.0.22", // Reinicialização automática do servidor
+  "supertest": "^6.3.3" // Testes de integração para APIs HTTP
 }
 ```
 
 ## Instalação
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/seu-usuario/agenda-eletronica-mvc.git
 cd agenda-eletronica-mvc
 ```
 
 2. Instale as dependências:
+
 ```bash
 npm install
 ```
 
 3. Configure a conexão com o MongoDB:
-Edite o arquivo `config/database.js` com as informações de conexão do seu banco de dados.
+   Edite o arquivo `config/database.js` com as informações de conexão do seu banco de dados.
 
 4. Inicie a aplicação:
+
 ```bash
 npm start
 ```
@@ -104,17 +111,7 @@ agenda-eletronica-mvc/
 │   ├── database.js           # Configurações do banco de dados
 │   └── auth.js               # Configurações de autenticação
 ├── logs/                     # Diretório para armazenamento de logs
-├── tests/                    # Testes automatizados
-│   ├── unit/                 # Testes unitários
-│   │   ├── authService.test.js
-│   │   ├── eventoController.test.js
-│   │   └── ...
-│   └── integration/          # Testes de integração
-│       ├── authRoutes.test.js
-│       ├── eventoRoutes.test.js
-│       └── ...
-├── exemplo_api.js            # Arquivo de exemplo para simulação de chamadas API
-├── relatorio_testes.md       # Relatório detalhado de testes e validação
+├── exemplo_api.js            # Arquivo de exemplo para simulação de
 ├── public/                   # Arquivos estáticos
 └── package.json              # Configurações do projeto
 ```
@@ -144,10 +141,13 @@ agenda-eletronica-mvc/
 ### Autenticação
 
 #### Registro de Usuário
+
 ```
 POST /api/auth/registrar
 ```
+
 Corpo da requisição:
+
 ```json
 {
   "nome": "Nome do Usuário",
@@ -157,10 +157,13 @@ Corpo da requisição:
 ```
 
 #### Login
+
 ```
 POST /api/auth/login
 ```
+
 Corpo da requisição:
+
 ```json
 {
   "email": "usuario@exemplo.com",
@@ -169,11 +172,13 @@ Corpo da requisição:
 ```
 
 #### Logout
+
 ```
 POST /api/auth/logout
 ```
 
 #### Perfil do Usuário
+
 ```
 GET /api/auth/perfil
 ```
@@ -181,10 +186,13 @@ GET /api/auth/perfil
 ### Eventos
 
 #### Criar Evento
+
 ```
 POST /api/eventos
 ```
+
 Corpo da requisição:
+
 ```json
 {
   "titulo": "Reunião de Equipe",
@@ -197,31 +205,37 @@ Corpo da requisição:
 ```
 
 #### Listar Eventos
+
 ```
 GET /api/eventos
 ```
 
 #### Buscar Evento por ID
+
 ```
 GET /api/eventos/:id
 ```
 
 #### Buscar Eventos por Data
+
 ```
 GET /api/eventos/data/:data
 ```
 
 #### Buscar Eventos por Intervalo
+
 ```
 GET /api/eventos/intervalo?dataInicio=2025-07-01&dataFim=2025-07-31
 ```
 
 #### Atualizar Evento
+
 ```
 PUT /api/eventos/:id
 ```
 
 #### Remover Evento
+
 ```
 DELETE /api/eventos/:id
 ```
@@ -229,10 +243,13 @@ DELETE /api/eventos/:id
 ### Categorias
 
 #### Criar Categoria
+
 ```
 POST /api/categorias
 ```
+
 Corpo da requisição:
+
 ```json
 {
   "nome": "Trabalho",
@@ -241,21 +258,25 @@ Corpo da requisição:
 ```
 
 #### Listar Categorias
+
 ```
 GET /api/categorias
 ```
 
 #### Buscar Categoria por ID
+
 ```
 GET /api/categorias/:id
 ```
 
 #### Atualizar Categoria
+
 ```
 PUT /api/categorias/:id
 ```
 
 #### Remover Categoria
+
 ```
 DELETE /api/categorias/:id
 ```
@@ -263,20 +284,25 @@ DELETE /api/categorias/:id
 ### Usuários
 
 #### Buscar Usuário por ID
+
 ```
 GET /api/usuarios/:id
 ```
 
 #### Atualizar Usuário
+
 ```
 PUT /api/usuarios/:id
 ```
 
 #### Alterar Senha
+
 ```
 POST /api/usuarios/:id/alterar-senha
 ```
+
 Corpo da requisição:
+
 ```json
 {
   "senhaAtual": "senha_atual",
@@ -334,6 +360,7 @@ Registro de Usuário:
 ## Exemplos de Uso com cURL
 
 ### Registro de Usuário
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/registrar \
   -H "Content-Type: application/json" \
@@ -341,6 +368,7 @@ curl -X POST http://localhost:3000/api/auth/registrar \
 ```
 
 ### Login
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/login \
   -H "Content-Type: application/json" \
@@ -349,6 +377,7 @@ curl -X POST http://localhost:3000/api/auth/login \
 ```
 
 ### Criar Evento
+
 ```bash
 curl -X POST http://localhost:3000/api/eventos \
   -H "Content-Type: application/json" \
@@ -357,6 +386,7 @@ curl -X POST http://localhost:3000/api/eventos \
 ```
 
 ### Listar Eventos
+
 ```bash
 curl -X GET http://localhost:3000/api/eventos \
   -b cookies.txt
@@ -365,31 +395,37 @@ curl -X GET http://localhost:3000/api/eventos \
 ## Testes
 
 ### Executar Todos os Testes
+
 ```bash
 npm test
 ```
 
 ### Executar Apenas Testes Unitários
+
 ```bash
 npm run test:unit
 ```
 
 ### Executar Apenas Testes de Integração
+
 ```bash
 npm run test:integration
 ```
 
 ## Relatório de Testes
+
 Um relatório detalhado dos testes e validações realizadas está disponível no arquivo `relatorio_testes.md`.
 
 ## Desenvolvimento
 
 ### Modo de Desenvolvimento
+
 ```bash
 npm run dev
 ```
 
 ### Estrutura de Arquivos
+
 - **Models**: Representam os dados e a lógica de negócios
   - **Domain**: Entidades de negócio
   - **Repositories**: Acesso a dados
@@ -401,4 +437,5 @@ npm run dev
 - **Utils**: Classes utilitárias como Database e Logger
 
 ## Licença
+
 ISC
