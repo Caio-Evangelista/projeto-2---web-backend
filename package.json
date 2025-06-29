@@ -1,0 +1,43 @@
+{
+  "name": "agenda-eletronica-mvc",
+  "version": "2.0.0",
+  "description": "API REST para agenda eletrônica com arquitetura MVC",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand",
+    "test:unit": "jest --testPathPattern=tests/unit",
+    "test:integration": "jest --testPathPattern=tests/integration"
+  },
+  "keywords": [
+    "agenda",
+    "calendario",
+    "mvc",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.6.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "moment": "^2.30.1",
+    "mongodb": "^4.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testTimeout": 10000
+  }
+}

@@ -1,0 +1,59 @@
+[ERROR] 2025-06-29T21:54:16.586Z - Erro ao registrar usuário: Email já está em uso
+[ERROR] 2025-06-29T21:54:16.595Z - Erro: Erro ao registrar usuário: Email já está em uso
+[ERROR] 2025-06-29T21:54:16.598Z - Error: Erro ao registrar usuário: Email já está em uso
+    at AuthService.registrar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:67:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AuthController.registrar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:34:29)
+[ERROR] 2025-06-29T21:55:25.703Z - Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T21:55:25.708Z - Erro: Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T21:55:25.709Z - Error: Erro ao autenticar usuário: Credenciais inválidas
+    at AuthService.autenticar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:106:19)
+    at async AuthController.login (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:61:29)
+[ERROR] 2025-06-29T21:56:18.516Z - Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T21:56:18.517Z - Erro: Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T21:56:18.517Z - Error: Erro ao autenticar usuário: Credenciais inválidas
+    at AuthService.autenticar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:106:19)
+    at async AuthController.login (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:61:29)
+[ERROR] 2025-06-29T21:58:54.962Z - Erro ao autenticar usuário: Senha inválida
+[ERROR] 2025-06-29T21:58:54.963Z - Erro: Erro ao autenticar usuário: Senha inválida
+[ERROR] 2025-06-29T21:58:54.964Z - Error: Erro ao autenticar usuário: Senha inválida
+    at AuthService.autenticar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:112:10)
+    at async AuthController.login (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:61:29)
+[ERROR] 2025-06-29T22:02:51.874Z - Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T22:02:51.876Z - Erro: Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T22:02:51.877Z - Error: Erro ao autenticar usuário: Credenciais inválidas
+    at AuthService.autenticar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:114:10)
+    at async AuthController.login (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:61:29)
+[ERROR] 2025-06-29T22:06:55.531Z - Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T22:06:55.532Z - Erro: Erro ao autenticar usuário: Credenciais inválidas
+[ERROR] 2025-06-29T22:06:55.533Z - Error: Erro ao autenticar usuário: Credenciais inválidas
+    at AuthService.autenticar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\models\services\AuthService.js:115:10)
+    at async AuthController.login (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\AuthController.js:61:29)
+[ERROR] 2025-06-29T22:21:21.927Z - Erro: Cannot read properties of undefined (reading '_id')
+[ERROR] 2025-06-29T22:21:21.932Z - TypeError: Cannot read properties of undefined (reading '_id')
+    at EventoController.criar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\EventoController.js:28:51)
+    at C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\routes\eventoRoutes.js:17:42
+    at Layer.handle [as handle_request] (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\route.js:149:13)
+    at C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\middleware\validator.js:25:13
+    at Layer.handle [as handle_request] (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\index.js:284:15
+[ERROR] 2025-06-29T22:25:58.069Z - Erro: Cannot read properties of undefined (reading '_id')
+[ERROR] 2025-06-29T22:25:58.071Z - TypeError: Cannot read properties of undefined (reading '_id')
+    at EventoController.listar (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\EventoController.js:52:25)
+    at C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\routes\eventoRoutes.js:22:42
+    at Layer.handle [as handle_request] (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\node_modules\express\lib\router\index.js:280:10)
+    at verificarAutenticacao (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\middleware\auth.js:16:3)
+[ERROR] 2025-06-29T22:28:15.695Z - Erro: eventosFiltrados is not defined
+[ERROR] 2025-06-29T22:28:15.697Z - ReferenceError: eventosFiltrados is not defined
+    at EventoController.buscarPorData (C:\Users\CAIO\Downloads\agenda-eletronica-mvc-completo (1)\agenda-eletronica-mvc\src\controllers\EventoController.js:112:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
